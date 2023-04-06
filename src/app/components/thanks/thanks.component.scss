@@ -1,0 +1,31 @@
+.main{
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    animation: fadein 0.3s ease-in;
+}
+button{
+    background-color: darken(#fff, 5%);
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+    &:hover{
+        background-color: darken(#fff, 15%);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@keyframes fadein {
+    from {
+    opacity: 0;
+    }
+
+    to {
+    opacity: 1;
+    }
+}

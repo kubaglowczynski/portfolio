@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    width: 1240px;
+    @media only screen and (max-width: 600px) {
+        width: 100vw;
+    }
+    .section{
+        max-height: 800px;
+        position: relative;
+        &-profile{
+            background: url("./portfolio-photo1.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(#252525, 0.7);
+            backdrop-filter: blur(1px);
+            width: 30%;
+            display: grid;
+            place-content: center;
+            height: 800px;
+
+            &-info{
+                position: absolute;
+                bottom: 10px;
+                left: 20px;
+                margin-top: 2rem;
+
+                a{
+                    color: silver;
+                    cursor: pointer;
+                    font-size: 2rem;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    &:hover{
+                        color: rgba(silver, 0.7);
+                    }
+                    @media only screen and (max-width: 600px) {
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+        }
+        &-main{
+            background-color: #DFE0E2;
+            width: 70%;
+            overflow-y: scroll;
+            max-height: 800px;
+        }
+    }
+}
