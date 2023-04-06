@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "portfolioApp/dist/portfolio-app"
+  publish = "portfolio/dist/portfolio-app"
 
 [[redirects]]
   from = "/*"
