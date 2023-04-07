@@ -15,6 +15,9 @@
         background-size: cover;
         background-position: center;
     }
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
 }
 .section-main-home{
     background: rgb(223,224,226);
@@ -29,15 +32,34 @@
     width: 90%;
     height: 80%;
     padding: 5%;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 1rem;
+        flex-direction: column;
+        padding: 10px;
+        background: transparent;
+    }
 }
 .home-info{
     width: 60%;
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
     p{
         font-weight: 600;
     }
     i{
         font-size: 2rem;
         margin: 0 10px;
+        @media only screen and (max-width: 600px) {
+            font-size: 1rem;
+            margin: 10px;
+        }
+    }
+    span{
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
     }
 }
 

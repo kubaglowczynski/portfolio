@@ -3,6 +3,9 @@
     padding: 10px;
     font-family: 'Merriweather', serif;
     animation: fadein 0.3s ease-in;
+    @media only screen and (max-width: 600px) {
+        padding: 5px;
+    }
     .colored{
         margin: 10px;
         box-shadow: 0 0 5px gray;
@@ -22,6 +25,7 @@
     @media only screen and (max-width: 600px) {
         width: 240px;
         height: 140px;
+        padding: 5px;
     }
     img{
         width: 320px;
