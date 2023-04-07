@@ -6,6 +6,11 @@
     flex-direction: column;
     height: 100%;
     animation: fadein 0.3s ease-in;
+    h1{
+    @media only screen and (max-width: 600px) {
+        font-size: 1rem;
+    }
+    }
 }
 button{
     background-color: darken(#fff, 5%);
