@@ -2,8 +2,4 @@ main{
     margin: 25px 50px;
     display: grid;
     place-content: center;
-    @media only screen and (max-width: 600px) {
-        width: 100vw;
-        margin: 0;
-    }
 }
