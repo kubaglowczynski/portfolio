@@ -10,17 +10,30 @@
         font-size: 2.5rem;
         border-radius: 5px;
         background-color: #fff;
+        @media only screen and (max-width: 600px) {
+            font-size: 1rem;
+        }
     }
 }
 .project{
     border: 1px solid gray;
     padding: 10px;
     width: 811px;
+    @media only screen and (max-width: 600px) {
+        width: 240px;
+        height: 140px;
+    }
     img{
         width: 320px;
         height: 200px;
         margin-left: 20px;
         box-shadow: 0 0 10px gray;
+        @media only screen and (max-width: 600px) {
+            width: 60px;
+            height: 40px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
     }
     .project-info{
         display: flex;
@@ -33,6 +46,9 @@
         }
         h1{
             margin: 0;
+        }
+        @media only screen and (max-width: 600px) {
+            font-size: 0.4rem;
         }
     }
 }
