@@ -5,6 +5,7 @@
     animation: fadein 0.3s ease-in;
     @media only screen and (max-width: 600px) {
         padding: 5px;
+        width: 90%;
     }
     .colored{
         margin: 10px;
@@ -23,8 +24,8 @@
     padding: 10px;
     width: 811px;
     @media only screen and (max-width: 600px) {
-        width: 240px;
-        height: 140px;
+        width: 100%;
+        height: 180px;
         padding: 5px;
     }
     img{
@@ -33,8 +34,8 @@
         margin-left: 20px;
         box-shadow: 0 0 10px gray;
         @media only screen and (max-width: 600px) {
-            width: 60px;
-            height: 40px;
+            width: 100px;
+            height: 60px;
             margin-right: 10px;
             margin-left: 10px;
         }

@@ -18,6 +18,9 @@
             display: grid;
             place-content: center;
             height: 800px;
+            @media only screen and (max-width: 600px) {
+                width: 15%;
+            }
 
             &-info{
                 position: absolute;
@@ -35,7 +38,12 @@
                         color: rgba(silver, 0.7);
                     }
                     @media only screen and (max-width: 600px) {
-                        font-size: 1rem;
+                        font-size: 1.5rem;
+                    }
+                }
+                p{
+                    @media only screen and (max-width: 600px) {
+                        display: none;
                     }
                 }
 
@@ -46,6 +54,9 @@
             width: 70%;
             overflow-y: scroll;
             max-height: 800px;
+            @media only screen and (max-width: 600px) {
+                width: 85%;
+            }
         }
     }
 }
