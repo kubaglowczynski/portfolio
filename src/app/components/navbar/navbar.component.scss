@@ -1,12 +1,17 @@
+$font-color: #C0C0C0;
+$font-family-main: 'Marhey', cursive;
+$font-family-logo: 'Lobster', cursive;
+$background-color: #252525;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .navbar{
-    color: silver;
+    color: $font-color;
     width: 100%;
-    background-color: #252525;
+    background-color: $background-color;
     padding: 2rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -24,8 +29,8 @@
         user-select: none;
         a{
         cursor: pointer;
-        font-family: 'Marhey', cursive;
-        color: silver;
+        font-family: $font-family-main;
+        color: $font-color;
         text-decoration: none;
         margin-left: 100px;
         font-size: 2rem;
@@ -38,12 +43,12 @@
 
         transition: color 0.2s ease-in;
             &:hover{
-                color: rgba(silver, 0.5);
+                color: rgba($font-color, 0.5);
             }
         }
     }
     .logo{
-        font-family: 'Lobster', cursive;;
+        font-family: $font-family-logo;
         font-size: 3rem;
         user-select: none;
         @media only screen and (max-width: 600px) {
