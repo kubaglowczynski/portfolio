@@ -1,6 +1,8 @@
 $border-color: #808080;
 $font-color: #252525;
+$font-color-links: 	#0000CD;
 $font-family-main: 'Merriweather', serif;
+
 
 .section-main-projects{
     color: $font-color;
@@ -47,11 +49,20 @@ $font-family-main: 'Merriweather', serif;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        a{
+            color: 	$font-color-links;
+        }
         p{
             margin-bottom: 20px;
         }
         h1{
             margin: 0;
+        }
+        h4{
+            margin: 15px 0 0 0;
+            @media only screen and (max-width: 600px) {
+                margin: 2px 0 0 0;
+            }
         }
         @media only screen and (max-width: 600px) {
             font-size: 0.4rem;
