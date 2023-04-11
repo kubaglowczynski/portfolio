@@ -1,5 +1,4 @@
 .section-main-contact{
-    animation: fadein 0.3s ease-in;
     padding: 100px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,6 +6,7 @@
     @media only screen and (max-width: 600px) {
         padding: 10px;
     }
+    animation: display 0.3s ease-in;
 }
 #email{
     width: 60%;
@@ -74,7 +74,7 @@
     }
 }
 
-@keyframes fadein {
+@keyframes display {
     from {
     opacity: 0;
     }

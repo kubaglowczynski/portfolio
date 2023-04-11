@@ -8,7 +8,7 @@ $font-family-main: 'Merriweather', serif;
     color: $font-color;
     padding: 10px;
     font-family: $font-family-main;
-    animation: fadein 0.3s ease-in;
+    animation: display 0.3s ease-in;
     @media only screen and (max-width: 600px) {
         padding: 5px;
         width: 90%;
@@ -72,7 +72,7 @@ $font-family-main: 'Merriweather', serif;
     }
 }
 
-@keyframes fadein {
+@keyframes display {
     from {
     opacity: 0;
     }

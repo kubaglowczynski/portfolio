@@ -1,7 +1,7 @@
 .main{
     font-family: 'Merriweather', serif;
     height: 100%;
-    animation: fadein 0.3s ease-in;
+    animation: display 0.3s ease-in;
 
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ button{
     }
 }
 
-@keyframes fadein {
+@keyframes display {
     from {
     opacity: 0;
     }
