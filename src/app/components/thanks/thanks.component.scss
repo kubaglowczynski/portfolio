@@ -1,4 +1,4 @@
-.main{
+.main {
     font-family: 'Merriweather', serif;
     height: 100%;
     animation: display 0.3s ease-in;
@@ -7,20 +7,23 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    h1{
-    @media only screen and (max-width: 600px) {
-        font-size: 1rem;
-    }
+
+    h1 {
+        @media only screen and (max-width: 600px) {
+            font-size: 1rem;
+        }
     }
 }
-button{
+
+button {
     border: 1px solid gray;
     border-radius: 5px;
     background-color: darken(#fff, 5%);
     height: 40px;
     padding: 5px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background-color: darken(#fff, 15%);
         transition: 0.3s ease-in-out;
     }
@@ -28,10 +31,10 @@ button{
 
 @keyframes display {
     from {
-    opacity: 0;
+        opacity: 0;
     }
 
     to {
-    opacity: 1;
+        opacity: 1;
     }
 }

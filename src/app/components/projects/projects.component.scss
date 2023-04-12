@@ -1,83 +1,97 @@
 $border-color: #808080;
 $font-color: #252525;
-$font-color-links: 	#0000CD;
+$font-color-links: #0000CD;
 $font-family-main: 'Merriweather', serif;
 
 
-.section-main-projects{
+.section-main-projects {
     color: $font-color;
     padding: 10px;
     font-family: $font-family-main;
     animation: display 0.3s ease-in;
+
     @media only screen and (max-width: 600px) {
         padding: 5px;
         width: 90%;
     }
-    .colored{
+
+    .colored {
         margin: 10px;
         box-shadow: 0 0 5px $border-color;
         padding: 3px 10px;
         font-size: 2.5rem;
         border-radius: 5px;
         background-color: #fff;
+
         @media only screen and (max-width: 600px) {
             font-size: 4vw;
         }
     }
-    .project{
-    border: 1px solid $border-color;
-    padding: 10px;
-    width: 811px;
-    @media only screen and (max-width: 600px) {
-        width: 100%;
-        padding: 5px;
-    }
-    img{
-        width: 320px;
-        height: 200px;
-        margin-left: 20px;
-        box-shadow: 0 0 10px $border-color;
+
+    .project {
+        border: 1px solid $border-color;
+        padding: 10px;
+        width: 811px;
+
         @media only screen and (max-width: 600px) {
-            width: 100px;
-            height: 60px;
-            margin-right: 10px;
-            margin-left: 10px;
+            width: 100%;
+            padding: 5px;
         }
-    }
-    .project-info{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        a{
-            color: 	$font-color-links;
-        }
-        p{
-            margin-bottom: 20px;
-        }
-        h1{
-            margin: 0;
-        }
-        h4{
-            margin: 15px 0 0 0;
+
+        img {
+            width: 320px;
+            height: 200px;
+            margin-left: 20px;
+            box-shadow: 0 0 10px $border-color;
+
             @media only screen and (max-width: 600px) {
-                margin: 2px 0 0 0;
+                width: 100px;
+                height: 60px;
+                margin-right: 10px;
+                margin-left: 10px;
             }
         }
-        @media only screen and (max-width: 600px) {
-            font-size: 0.4rem;
-            max-height: 100%;
+
+        .project-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            a {
+                color: $font-color-links;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                margin: 0;
+            }
+
+            h4 {
+                margin: 15px 0 0 0;
+
+                @media only screen and (max-width: 600px) {
+                    margin: 2px 0 0 0;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                font-size: 0.4rem;
+                max-height: 100%;
+            }
         }
-    }
     }
 }
 
 @keyframes display {
     from {
-    opacity: 0;
+        opacity: 0;
     }
 
     to {
-    opacity: 1;
+        opacity: 1;
     }
 }

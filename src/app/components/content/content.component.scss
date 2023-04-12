@@ -1,13 +1,16 @@
-.container{
+.container {
     display: flex;
     width: 1240px;
+
     @media only screen and (max-width: 600px) {
         width: 100vw;
     }
-    .section{
+
+    .section {
         max-height: 800px;
         position: relative;
-        &-profile{
+
+        &-profile {
             background: url("./portfolio-photo1.jpg");
             background-position: center;
             background-size: cover;
@@ -18,32 +21,37 @@
             display: grid;
             place-content: center;
             height: 800px;
+
             @media only screen and (max-width: 600px) {
                 width: 15%;
                 max-height: 70vh;
             }
 
-            &-info{
+            &-info {
                 position: absolute;
                 bottom: 10px;
                 left: 20px;
                 margin-top: 2rem;
 
-                a{
+                a {
                     color: silver;
                     cursor: pointer;
                     font-size: 2rem;
                     text-decoration: none;
                     transition: 0.3s;
-                    &:hover{
+
+                    &:hover {
                         color: rgba(silver, 0.7);
                     }
+
                     @media only screen and (max-width: 600px) {
                         font-size: 1.5rem;
                     }
                 }
-                span{
+
+                span {
                     margin-left: 10px;
+
                     @media only screen and (max-width: 600px) {
                         display: none;
                     }
@@ -51,11 +59,13 @@
 
             }
         }
-        &-main{
+
+        &-main {
             background-color: #DFE0E2;
             width: 70%;
             overflow-y: scroll;
             max-height: 800px;
+
             @media only screen and (max-width: 600px) {
                 width: 85%;
                 max-height: 70vh;

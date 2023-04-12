@@ -1,14 +1,19 @@
-.footer-container{
+.footer-container {
     min-height: 2vh;
     position: relative;
     bottom: 5px;
     margin-left: 3px;
     display: flex;
-    a{
-        &:nth-of-type(2),&:nth-of-type(3){
+
+    a {
+
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
             margin-left: 30px;
         }
+
         color: darken(#b1b1b1, 30%);
+
         @media only screen and (max-width: 600px) {
             font-size: 0.8rem;
         }
